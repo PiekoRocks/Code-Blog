@@ -1,29 +1,37 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Blog</title>
-        <body>
-            <style>
-                body {
-                    background-color: #d1d1d1;
-                    color: #000000;
-                }
-            </style>
-
-            <h1>Code Blog</h1>
-
-            <h2>Link to home page</h2>
-            <p>
-                <a href="index.html">Home page</a>
-            </p>
-            <h3>Assignment 1</h3>
-            <h4>10/4/24</h4>
-            <p>While making this first assignment, I had some difficulties figuring out how to make the background less white. I am a big fan of dark mode, so I really wanted to make it easier on my eyes. I also had some trouble with the picture. At first, when I added it to the project, it showed up, but it was massive! I then learned that you can resize images with the style option and set a width and height. Now the image fits nicely with the rest of the text.</p>
-            <p>I already knew the basics from my high school class, like the different header sizes and paragraphs, but that was about all I could remember. The new things that I learned about were image resizing and how nested pages work. I never really could wrap my head around how a website worked, but now I realize it is just like a folder tree in file explorer. So simple! I also learned how to create links to other pages or files on a page and how to access the ones in nested folders with the `..` to go back or `/path` to go forward a level.</p>
-            <p>I did use the internet to help me with some of my troubles. I simply googled how to resize an image in HTML, and this website was one of the first results: <a href="https://imagekit.io/blog/how-to-resize-image-in-html/">How to resize an image in HTML.</a> It has some great info on lots of different ways to make an image change sizes automatically or just have it stay a set size.</p>
-
-
-
-
-        </body>
+        <title>Johnson Code Blog</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <h1>Nico Johnson - Code Blog</h1>
+        </header>
+        <!-- <nav>
+            <a href="index.html">Home page</a>
+        </nav> -->
+        <main>
+            <article>
+                <h2>Assignment 1</h2>
+                <h4>10/4/24</h4>
+                <p><a href="assignment1.html" class="assignment-link" target="_blank">Link to Assignment 1</a>.</p>
+                <p>While making this first assignment, I had some difficulties figuring out how to make the background less white. I am a big fan of dark mode, so I really wanted to make it easier on my eyes. I also had some trouble with the picture. At first, when I added it to the project, it showed up, but it was massive! I then learned that you can resize images with the style option and set a width and height. Now the image fits nicely with the rest of the text.</p>
+                <p>I already knew the basics from my high school class, like the different header sizes and paragraphs, but that was about all I could remember. The new things that I learned about were image resizing and how nested pages work. I never really could wrap my head around how a website worked, but now I realize it is just like a folder tree in file explorer. So simple! I also learned how to create links to other pages or files on a page and how to access the ones in nested folders with the `..` to go back or `/path` to go forward a level.</p>
+                <p>I did use the internet to help me with some of my troubles. I simply googled how to resize an image in HTML, and this website was one of the first results: <a href="https://imagekit.io/blog/how-to-resize-image-in-html/" target="_blank">How to resize an image in HTML.</a> It has some great info on lots of different ways to make an image change sizes automatically or just have it stay a set size.</p>
+            </article>
+            <article>
+                <h2>Assignment 2</h2>
+                <h4>10/27/24</h4>
+                <p><a href="assignment2.html" class="assignment-link" target="_blank">Link to Assignment 2</a>.</p>
+                <p>In this second assignment, I encountered a lot of difficulties, particularly in making everything look right and ensuring the filter boxes were the proper sizes. Initially, I had trouble aligning them, they either overlapped with their labels or were pushed outside the filters' container box. When I finally got the input boxes to look correct, the condition checkboxes were still misaligned. I spent about 2-3 hours trying to fix these issues using Google, GitHub Copilot, and ChatGPT, but to no avail. Eventually, I decided to step away from the project and came back the next day with a fresh perspective.</p>
+                <p>Upon returning, I discovered that the width setting in the `.filter-input-container` was causing the condition checkboxes to behave incorrectly. Once I removed that setting, the checkboxes looked perfect, but the input boxes no longer occupied the entire row. To solve this, I created separate settings specifically for the filter text, price, and city box widths, which resolved the issue. It’s often the little things that trip me up the most. Especially while coding anything.</p>
+                <p>From this assignment, I learned how to arrange multiple items in a grid and how to create visually appealing buttons that respond well when hovered over. I was already familiar with basic text effects, such as font, color, and weight. One fun technique I already knew was how to apply hover transitions and animations, allowing elements like button colors or the "add post" button to smoothly change size instead of simply jumping to the new setting.</p>
+                <p>For help on this assignment, I utilized Google, GitHub Copilot, and ChatGPT to address my issues and understand how things work. Additionally, a fantastic tool I found was Chrome’s Inspector, which allows you to change attributes live, updating them without needing to retype everything each time.</p>
+            </article>
+        </main>
+        <footer>
+            <p>2024 Web Dev Code Blog</p>
+        </footer>
+    </body>
 </html>
