@@ -3,6 +3,7 @@
     <head>
         <title>Johnson Code Blog</title>
         <link rel="stylesheet" href="style.css">
+        <script src="blog.js" charset="utf-8" defer></script>
     </head>
     <body>
         <header>
@@ -15,7 +16,7 @@
             <article>
                 <h2>Assignment 1</h2>
                 <h4>10/4/24</h4>
-                <p><a href="assignment1.html" class="assignment-link" target="_blank">Link to Assignment 1</a>.</p>
+                <p><a href="https://web.engr.oregonstate.edu/~johnsn26/Assignment_1/index.html" class="assignment-link" target="_blank">Link to Assignment 1</a></p>
                 <p>While making this first assignment, I had some difficulties figuring out how to make the background less white. I am a big fan of dark mode, so I really wanted to make it easier on my eyes. I also had some trouble with the picture. At first, when I added it to the project, it showed up, but it was massive! I then learned that you can resize images with the style option and set a width and height. Now the image fits nicely with the rest of the text.</p>
                 <p>I already knew the basics from my high school class, like the different header sizes and paragraphs, but that was about all I could remember. The new things that I learned about were image resizing and how nested pages work. I never really could wrap my head around how a website worked, but now I realize it is just like a folder tree in file explorer. So simple! I also learned how to create links to other pages or files on a page and how to access the ones in nested folders with the `..` to go back or `/path` to go forward a level.</p>
                 <p>I did use the internet to help me with some of my troubles. I simply googled how to resize an image in HTML, and this website was one of the first results: <a href="https://imagekit.io/blog/how-to-resize-image-in-html/" target="_blank">How to resize an image in HTML.</a> It has some great info on lots of different ways to make an image change sizes automatically or just have it stay a set size.</p>
@@ -23,11 +24,30 @@
             <article>
                 <h2>Assignment 2</h2>
                 <h4>10/27/24</h4>
-                <p><a href="assignment2.html" class="assignment-link" target="_blank">Link to Assignment 2</a>.</p>
+                <p><a href="https://web.engr.oregonstate.edu/~johnsn26/assignment-2-PiekoRocks/index.html" class="assignment-link" target="_blank">Link to Assignment 2</a></p>
                 <p>In this second assignment, I encountered a lot of difficulties, particularly in making everything look right and ensuring the filter boxes were the proper sizes. Initially, I had trouble aligning them, they either overlapped with their labels or were pushed outside the filters' container box. When I finally got the input boxes to look correct, the condition checkboxes were still misaligned. I spent about 2-3 hours trying to fix these issues using Google, GitHub Copilot, and ChatGPT, but to no avail. Eventually, I decided to step away from the project and came back the next day with a fresh perspective.</p>
-                <p>Upon returning, I discovered that the width setting in the `.filter-input-container` was causing the condition checkboxes to behave incorrectly. Once I removed that setting, the checkboxes looked perfect, but the input boxes no longer occupied the entire row. To solve this, I created separate settings specifically for the filter text, price, and city box widths, which resolved the issue. It’s often the little things that trip me up the most. Especially while coding anything.</p>
+                <p>Upon returning, I discovered that the width setting in the `.filter-input-container` was causing the condition checkboxes to behave incorrectly. Once I removed that setting, the checkboxes looked perfect, but the input boxes no longer occupied the entire row. To solve this, I created separate settings specifically for the filter text, price, and city box widths, which resolved the issue. It's often the little things that trip me up the most. Especially while coding anything.</p>
                 <p>From this assignment, I learned how to arrange multiple items in a grid and how to create visually appealing buttons that respond well when hovered over. I was already familiar with basic text effects, such as font, color, and weight. One fun technique I already knew was how to apply hover transitions and animations, allowing elements like button colors or the "add post" button to smoothly change size instead of simply jumping to the new setting.</p>
-                <p>For help on this assignment, I utilized Google, GitHub Copilot, and ChatGPT to address my issues and understand how things work. Additionally, a fantastic tool I found was Chrome’s Inspector, which allows you to change attributes live, updating them without needing to retype everything each time.</p>
+                <p>For help on this assignment, I utilized Google, GitHub Copilot, and ChatGPT to address my issues and understand how things work. Additionally, a fantastic tool I found was Chrome's Inspector, which allows you to change attributes live, updating them without needing to retype everything each time.</p>
+            </article>
+            <article>
+                <h2>Assignment 3</h2>
+                <h4>11/12/24</h4>
+                <p><a href="https://web.engr.oregonstate.edu/~johnsn26/assignment-3-PiekoRocks/index.html" class="assignment-link" target="_blank">Link to Assignment 3</a></p>
+                <p>In this third assignment, I made the 'Add Post' button and filters functional. One of the most challenging aspects was getting the Add Post page to reset properly when it was closed. Initially, it seemed like everything was working correctly on the surface, but I noticed that the radio buttons were being set to a null value and wouldn't function again until the page was reloaded. It took me some time to figure it out, without any help from Google or Copilot. Eventually, I realized that when I selected the item, photo, price, and city text input boxes to be cleared of text, I was also unintentionally selecting the radio buttons and setting them to an empty string, which is an invalid state for them. After I started clearing each input type separately (text, number, radio button), everything worked perfectly!</p>
+                <p>I learned quite a bit from this project. I had never used JavaScript before, so getting all the .getAttribute, .toLowerCase, .addEventListener, etc., to work properly and in the right spots was a bit confusing. I learned that specific elements need to stick to their specific value types otherwise, they stop functioning correctly. The Chrome Inspector console was a huge help in figuring out the radio button problem. Using console.log("condition:", condition) allowed me to see what was happening with the value.</p>
+                <p>I referenced the JS DOM Manipulation examples we did in class for creating and adding elements to a webpage. Stack Overflow was also very helpful, and GitHub's Copilot helped me catch some errors I hadn't noticed. Google was another great resource. I had to look up how to capitalize the first letter of a string when adding user inputted city names to the filters list to make sure they all matched in style.</p>
+            </article>
+            <article>
+                <h2>Assignment 5</h2>
+                <h4>12/1/24</h4>
+                <p><a href="https://web.engr.oregonstate.edu/~johnsn26/assignment-5-PiekoRocks/index.html" class="assignment-link" target="_blank">Link to Assignment 5</a></p>
+                <p>One of the main challenges of this assignment was ensuring that the same template could be used to render both the root path / and the /posts/<n> path. Initially, I created separate templates for each path, but I realized that to get full credit, I needed to use a single template. This required adding conditional logic within the template to handle both cases. Another challenge was ensuring that the route for /posts/<n> only accepted valid integers and did not accept paths with letters or other non-integer characters. I solved this by using a regular expression in the route definition.</p>
+                <p>I learned how to use Handlebars templates more effectively, particularly how to use conditional logic within templates to handle different cases. I also gained a better understanding of how to use regular expressions in route definitions to ensure that only valid paths are accepted. I found that I already had a good grasp of setting up an Express server.</p>
+                <p>Several resources were helpful for completing this assignment:
+                    Class Lectures: The lectures provided a good start for understanding Express and Handlebars with examples.
+                    Github Copilot: I used Github Copilot to help fix problems and put things in the correct spot. Especially the seperate files.
+                    Stack Overflow: There is lots of good info on Stack Overflow, such as using regular expressions in route definitions. I had to google that one and how to use the 'if' conditional statements.</p>
             </article>
         </main>
         <footer>
